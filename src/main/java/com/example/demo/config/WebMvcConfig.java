@@ -13,7 +13,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
     // Autorisation CORS des requetes qui sont envoyés par react
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/**").allowedOrigins("localhost:3000")
+        registry.addMapping("/**").allowedOrigins("*")
                 .allowedMethods("HEAD", "OPTIONS", "GET", "POST", "PUT", "PATCH", "DELETE").maxAge(MAX_AGE_SECS);
     }
 }
