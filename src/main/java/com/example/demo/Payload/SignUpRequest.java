@@ -1,7 +1,7 @@
 package com.example.demo.Payload;
 
 import javax.validation.constraints.*;
-
+// La structure de la requete de signup
 public class SignUpRequest {
     @NotBlank
     @Size(min = 4, max = 40)

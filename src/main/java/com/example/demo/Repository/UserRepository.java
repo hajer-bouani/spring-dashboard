@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Optional;
 
 import com.example.demo.model.User;
-
+// Le repository qui contient les methodes JPA pour le model USER
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
     Optional<User> findByEmail(String email);

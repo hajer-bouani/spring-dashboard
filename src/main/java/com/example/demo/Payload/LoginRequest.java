@@ -1,7 +1,7 @@
 package com.example.demo.Payload;
 
 import javax.validation.constraints.NotBlank;
-
+// La structure de la requete de login
 public class LoginRequest {
     @NotBlank
     private String usernameOrEmail;

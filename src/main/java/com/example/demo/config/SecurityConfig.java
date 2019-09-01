@@ -22,10 +22,13 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(securedEnabled = true, jsr250Enabled = true, prePostEnabled = true)
+
+// La configuarion de Spring Security
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
+    // Injection le la user repository en utilisation le IOC ( Invertion of control )
     @Autowired
     CustomUserDetailsService customUserDetailsService;
-
+// Injection le la user repository en utilisation le IOC ( Invertion of control )
     @Autowired
     private JwtAuthenticationEntryPoint unauthorizedHandler;
 

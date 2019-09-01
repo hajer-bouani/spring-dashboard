@@ -11,7 +11,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
-
+// La classe qui contient toutes les methodes de traitement sur le JWT
 @Component
 public class JwtTokenProvider {
 

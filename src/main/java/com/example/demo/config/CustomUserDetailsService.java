@@ -9,10 +9,10 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
+// Le service responsable de la gestion des utilisateurs
 @Service
 public class CustomUserDetailsService implements UserDetailsService {
-
+    // Injection le la user repository en utilisation le IOC ( Invertion of control )
     @Autowired
     com.example.demo.Repository.UserRepository userRepository;
 

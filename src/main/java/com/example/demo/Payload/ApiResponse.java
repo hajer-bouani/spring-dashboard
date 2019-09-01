@@ -1,5 +1,5 @@
 package com.example.demo.Payload;
-
+// La structure de reponse de l'API
 public class ApiResponse {
     private Boolean success;
     private String message;

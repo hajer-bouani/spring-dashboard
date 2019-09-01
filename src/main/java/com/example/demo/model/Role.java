@@ -2,7 +2,7 @@ package com.example.demo.model;
 
 import org.hibernate.annotations.NaturalId;
 import javax.persistence.*;
-
+// L'entité Role dans le JPA
 @Entity
 @Table(name = "roles")
 public class Role {

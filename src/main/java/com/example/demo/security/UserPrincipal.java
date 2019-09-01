@@ -11,6 +11,8 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
+
+// Le type utilisateur pour spring security
 public class UserPrincipal implements UserDetails {
     private static final long serialVersionUID = 1L;
 

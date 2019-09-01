@@ -1,5 +1,5 @@
 package com.example.demo.Payload;
-
+// La structure de la reponse qui contient le JWT
 public class JwtAuthenticationResponse {
     private String accessToken;
     private String tokenType = "Bearer";

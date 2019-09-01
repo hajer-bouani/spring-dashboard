@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.example.demo.config.CustomUserDetailsService;
 
 import java.io.IOException;
-
+// La classe qui verifie pour chaque requete le token JWT
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
     @Autowired

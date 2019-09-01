@@ -34,22 +34,22 @@ import java.util.Collections;
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {
-
+    // Injection le la user repository en utilisation le IOC ( Invertion of control )
     @Autowired
     AuthenticationManager authenticationManager;
-
+    // Injection le la user repository en utilisation le IOC ( Invertion of control )
     @Autowired
     UserRepository userRepository;
-
+    // Injection le la user repository en utilisation le IOC ( Invertion of control )
     @Autowired
     RoleRepository roleRepository;
-
+    // Injection le la user repository en utilisation le IOC ( Invertion of control )
     @Autowired
     PasswordEncoder passwordEncoder;
-
+    // Injection le la user repository en utilisation le IOC ( Invertion of control )
     @Autowired
     JwtTokenProvider tokenProvider;
-
+    // Mapping entre requetes et methodes java utilisés
     @PostMapping("/signin")
     public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginRequest loginRequest) {
 
